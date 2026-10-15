@@ -1064,7 +1064,7 @@ function openApp(username) {
 
   loginPage.classList.add("hidden");
   appPage.classList.remove("hidden");
-  if (currentRole === "admin") { showReport(); } else { showHome(); }
+  showHome();      // everyone starts on Home (a class teacher goes straight to his or her class)
 }
 
 function logout() {
